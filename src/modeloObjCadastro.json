@@ -1,0 +1,24 @@
+{
+  "questionario" : 
+  {
+    "data":"",//data que foi feito o questionario
+    "localAbordagem":"",//local onde foi feito a abordagem
+    "motivoAbordagem":"",//motivo da abordagem : chamado, ronda, ação conjunta
+    "nomeAbordado":"",//nome completo do abordado
+    "dataNascimento":"",//data de nascimento do abordado
+    "sexo":"",//genero do abordado: Feminino, Masculino, Homossexual, ...
+    "cor":"",// cor que o abordado se considera
+    "localNascimento":"",//onde o abordado nasceu
+    "localOrigem":"",//de onde ele esta vindo
+    "tempoEmJundiai":"",// ha quanto tempo ele esta na cidade
+    "tempoSituacaoDeRua":"",// ha quanto tempo ele esta na rua
+    "motivoLevouParaRua":"",//qual foi o motivo que levou o abordado a morar na rua
+    "interesseSairDaRua":"",//abordado tem interesse em sair da rua
+    "precisaParaSairDaRua":"",//caso ele tenha o que ele precisa
+    "buscaQualServico":"",//busca qual tipo de serviço na cidade
+    "meioSobrevivencia":"",//qual seu meio de renda
+    "recebeBeneficio":"",//Recebe algum benefiocio do governo
+    "observacaoGeral":"",//qualquer tipo de informação importante
+    "responsavel":""//quem preencheu esse formulario
+  }
+}
