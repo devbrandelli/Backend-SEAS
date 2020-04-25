@@ -1,6 +1,5 @@
 const express = require ('express');
 const mongoose = require ('mongoose')
-const questionario =require('./Controllers/QuestionarioController')
 const routes = require('./Routes')
 
 const app = express();
