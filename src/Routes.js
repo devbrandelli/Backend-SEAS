@@ -7,6 +7,7 @@ const routes = express.Router();
 
 //ROTAS QUESTIONARIO
 routes.post('/questionario/create',QuestionarioController.create);
+routes.get('/questionario/index', QuestionarioController.getAll);
 
 //ROTAS USUARIOS
 routes.post('/user/create', UserController.Create);
