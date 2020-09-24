@@ -6,8 +6,9 @@ const LoginController = require ('./Controllers/LoginController')
 const routes = express.Router();
 
 //ROTAS QUESTIONARIO
-routes.post('/questionario/create',QuestionarioController.create);
+routes.post('/questionario',QuestionarioController.create);
 routes.get('/questionario/index', QuestionarioController.getAll);
+routes.delete('/questionario/:id', QuestionarioController.deleteOne);
 
 //ROTAS USUARIOS
 routes.post('/user/create', UserController.Create);

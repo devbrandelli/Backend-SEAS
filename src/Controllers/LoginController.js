@@ -7,7 +7,6 @@ module.exports = {
 
   async Auth(req, res) {
     const { usuario, senha } = req.body;
-
     const response = await User.findOne({ usuario: usuario })    
 
     if (response === null) {
@@ -16,7 +15,7 @@ module.exports = {
 
     bcrypt.compare(senha, response.senha, (err, same) => {
       if (err) {
-        return res.status(401).json({ error: "Usuario não autorizado" })
+        return res.status(401).json({ error: "Usuario ou senha incorreto" })
       }
       if (same) {
         const token = jwt.sign(
@@ -24,7 +23,7 @@ module.exports = {
             name: response.nomeCompleto,
             email: response.email
           }, process.env.JWT_KEY,
-          {
+          { 
             expiresIn: "1h"
           }
         )

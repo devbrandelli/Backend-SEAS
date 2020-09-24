@@ -2,28 +2,23 @@ const mongoose = require('mongoose');
 
 const QuestionarioSchema = new mongoose.Schema({  
     data: Date,
+    hora: "",
     localAbordagem: "",
     motivoAbordagem: "",
     nomeAbordado: "",
     dataNascimento: Date,
     sexo: "",
     cor: "",
-    localNascimento: {
-      cidade: "",
-      uf: ""
-    },
-    localOrigem: {
-      cidade: "",
-      uf: ""
-    },
-    tempoEmJundiai: "",
-    tempoSituacaoDeRua: "",
-    motivoLevouParaRua: "",
-    interesseSairDaRua: Boolean,
-    precisaParaSairDaRua: "",
-    buscaQualServico: "",
+    localNascimento: "",
+    localOrigem: "",
+    tempoJund: "",
+    tempoRua: "",
+    motivo: [],
+    sairRua: "",
+    oquePrecisaSairDaRua: "",
+    servicoBusca: [],
     meioSobrevivencia: "",
-    recebeBeneficio: Boolean,
+    beneficio: [],
     observacaoGeral: "",
     responsavel: ""  
 })
