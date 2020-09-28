@@ -1,5 +1,5 @@
-const { deleteOne } = require('../Models/Questionario');
-const Questionario = require('../Models/Questionario')
+const { deleteOne } = require('../Models/questionario');
+const Questionario = require('../Models/questionario')
 
 module.exports = {
   async create(req, res) {
