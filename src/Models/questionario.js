@@ -19,7 +19,12 @@ const QuestionarioSchema = new mongoose.Schema({
     servicoBusca: [],
     meioSobrevivencia: "",
     beneficio: [],
+    casosEspeciais: [],    
+    equipeComposta: "",
+    pessoasAbordadas: "",
     observacaoGeral: "",
+    encaminhamento: "",
+    orientacoes: "",
     responsavel: ""  
 })
 
