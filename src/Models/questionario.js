@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const QuestionarioSchema = new mongoose.Schema({  
-    data: Date,
+    data: "",
     hora: "",
     localAbordagem: "",
     motivoAbordagem: "",
@@ -15,7 +15,7 @@ const QuestionarioSchema = new mongoose.Schema({
     tempoRua: "",
     motivo: [],
     sairRua: "",
-    oquePrecisaSairDaRua: "",
+    oquePrecisaSairRua: "",
     servicoBusca: [],
     meioSobrevivencia: "",
     beneficio: [],

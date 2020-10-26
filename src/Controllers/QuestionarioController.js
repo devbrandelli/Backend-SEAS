@@ -7,7 +7,7 @@ module.exports = {
     const response = await Questionario.create(questionario, (err)=> {
       if (err) {
         res.status(500).json({message: "Erro ao inserir questionario no banco"})
-      }
+      } 
     })
     res.json({mensage: "Questionario enviado com sucesso"})
   },
