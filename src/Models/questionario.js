@@ -6,7 +6,7 @@ const QuestionarioSchema = new mongoose.Schema({
     localAbordagem: "",
     motivoAbordagem: "",
     nomeAbordado: "",
-    dataNascimento: Date,
+    dataNascimento: "",
     sexo: "",
     cor: "",
     localNascimento: "",
