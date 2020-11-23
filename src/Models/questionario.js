@@ -1,12 +1,12 @@
 const mongoose = require('mongoose');
 
 const QuestionarioSchema = new mongoose.Schema({  
-    data: "",
+    data: Date,
     hora: "",
     localAbordagem: "",
     motivoAbordagem: "",
     nomeAbordado: "",
-    dataNascimento: "",
+    dataNascimento: Date,
     sexo: "",
     cor: "",
     localNascimento: "",
