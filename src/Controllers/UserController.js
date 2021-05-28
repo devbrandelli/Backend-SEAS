@@ -2,7 +2,7 @@ const User = require('../Models/user')
 const bcrypt = require('bcrypt')
 
 module.exports = {
-  async Create(req, res) {
+  async create(req, res) {
     var { user } = req.body;
     var response = await User.find({ usuario: user.usuario }, (err) => {
       if(err){
@@ -35,7 +35,15 @@ module.exports = {
     return res.status(201).json({ mensage: "Usuario criado com sucesso" })
   },
 
-  async Delete(req, res) {
+  async listAll(req, res) {
+    const response = await User.find();
+
+    
+    
+    return res.status(200).json(response);
+  },
+
+  async delete(req, res) {
     const { usuario } = req.params;
     const response = await User.findOne({ usuario: usuario })
 

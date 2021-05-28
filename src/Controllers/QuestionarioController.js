@@ -12,7 +12,7 @@ module.exports = {
     res.json({mensage: "Questionario enviado com sucesso"})
   },
   async getAll(req, res) {
-    const response = await Questionario.find();
+    const response = await Questionario.find().sort([['data', 1]]);
     res.json({response})
   },
 

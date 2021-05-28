@@ -11,8 +11,9 @@ routes.get('/questionario', QuestionarioController.getAll);
 routes.delete('/questionario/:id', QuestionarioController.deleteOne);
 
 //ROTAS USUARIOS
-routes.post('/user/create', UserController.Create);
-routes.delete('/user/delete/:usuario', UserController.Delete);
+routes.get('/user', UserController.listAll)
+routes.post('/user', UserController.create);
+routes.delete('/user/:usuario', UserController.delete);
 
 //ROTA DE LOGIN
 routes.post('/login', LoginController.Auth)
